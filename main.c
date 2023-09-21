@@ -4,15 +4,19 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	char c;
-	int i;
+	char c, d;
+	int a, b;
 	
-	printf("input a number : ");
+	printf("enter character : ");
 	scanf("%c", &c);
 	
-	i=c - '0';
-	printf("The input number ASCII is %i\n", c);
-	printf("The input number is %i\n", i);
+	a = c - '0';
+	b = a+1;
+	d = b + '0';
+	
+	printf("the next character of %c (%d) is %c (%d)", c,a,d,b); 
+	
+	
 	
 	
 	return 0;
